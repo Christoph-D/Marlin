@@ -1439,7 +1439,7 @@
  * you must uncomment the following option or it won't work.
  *
  */
-//#define SDSUPPORT
+#define SDSUPPORT
 
 /**
  * SD CARD: SPI SPEED
@@ -1937,4 +1937,7 @@
 // Only power servos during movement, otherwise leave off to prevent jitter
 //#define DEACTIVATE_SERVOS_AFTER_MOVE
 
+
+// Enable Anycubic TFT
+#define AnycubicTFTmodel
 #endif // CONFIGURATION_H
