@@ -1939,6 +1939,6 @@
 
 
 // Enable Anycubic TFT
-#define AnycubicTFTmodel
+#define ANYCUBIC_TFT_MODEL
 #define ANYCUBIC_FILAMENT_RUNOUT_SENSOR
 #endif // CONFIGURATION_H
