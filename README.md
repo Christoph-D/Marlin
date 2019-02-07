@@ -1,4 +1,46 @@
-# Anycubic i3 Mega / Mega-S Marlin 1.1.9 by davidramiro
+# Anycubic i3 Mega Marlin 1.1.9 (bugfix-1.1.x) by davidramiro / derhopp / Christoph-D
+
+This is a custom Marlin firmware to support the Anycubic i3 Mega and
+its touchscreen.  It has a clean diff against the current original
+firmware to convince potential users that these are all reasonable
+changes.
+
+This version includes the changes made by
+[derhopp](https://github.com/derhopp/Marlin-with-Anycubic-i3-Mega-TFT)
+to support the Anycubic i3 Mega TFT screen.  It also includes the
+changes made by
+[davidramiro](https://github.com/davidramiro/Marlin-AI3M).
+
+The reason I (Christoph-D) created yet another fork of this is that I
+needed a way to convince myself that derhopp's and davidramiro's
+firmwares are safe to use.
+
+I rebased all and only the changes for the Anycubic i3 Mega onto the
+current bugfix-1.1.x branch of the original Marlin firmware in order
+to get a clean diff against the current original firmware.
+
+This allowed me to see what changes the Anycubic i3 Mega support
+really introduced, and convince myself that everything is fine.  As of
+2019-02-07, I run this firmware on a stock Anycubic i3 Mega without
+any apparent issues.  Mesh bed leveling and printing work great.
+
+I may rebase this branch from time to time.  You can see the [Diff
+against the original Marlin firmware on
+Github](https://github.com/MarlinFirmware/Marlin/compare/bugfix-1.1.x...Christoph-D:anycubic-i3-mega-rebased).
+
+Alternatively, you can run the following commands:
+
+```shell
+$ git remote add upstream https://github.com/MarlinFirmware/Marlin.git
+$ git fetch upstream
+$ git diff upstream/bugfix-1.1.x
+```
+
+This should show only changes relevant to supporting the Anycubic i3
+Mega.
+
+The text below this line is davidramiro's README.
+
 
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6B6SAL5XRH842&source=url) [![Downloads](https://img.shields.io/github/downloads/davidramiro/Marlin-AI3M/total.svg?style=flat)](https://github.com/davidramiro/Marlin-AI3M/releases) [![Open Issues](https://img.shields.io/github/issues-raw/davidramiro/Marlin-AI3M.svg?style=flat)](https://github.com/davidramiro/Marlin-AI3M/issues?q=is%3Aopen+is%3Aissue) [![License](https://img.shields.io/github/license/davidramiro/Marlin-AI3M.svg?style=flat)](https://github.com/davidramiro/Marlin-AI3M/blob/master/LICENSE) [![Latest Release](https://img.shields.io/github/release/davidramiro/Marlin-AI3m.svg?style=flat)](https://github.com/davidramiro/Marlin-AI3M/releases/latest/) [![Last commit](https://img.shields.io/github/last-commit/davidramiro/Marlin-AI3m.svg?style=flat)](https://github.com/davidramiro/Marlin-Ai3M/commits/)  [![Travis CI](https://api.travis-ci.org/davidramiro/Marlin-Ai3M.svg?branch=master)](https://travis-ci.org/davidramiro/Marlin-Ai3M)  
 

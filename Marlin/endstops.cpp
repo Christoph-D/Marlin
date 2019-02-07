@@ -545,7 +545,7 @@ void Endstops::update() {
      */
     static esbits_t old_live_state;
     if (old_live_state != live_state) {
-      endstop_poll_count = 2;
+      endstop_poll_count = 7;
       old_live_state = live_state;
     }
     else if (endstop_poll_count && !--endstop_poll_count)
