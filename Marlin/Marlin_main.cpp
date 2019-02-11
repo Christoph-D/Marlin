@@ -8753,7 +8753,7 @@ inline void gcode_M109() {
   #endif
   
   // flush the serial buffer after heating to prevent lockup by m105
-  flush_and_request_resend();
+  SERIAL_FLUSH();
 
 }
 
@@ -8909,7 +8909,7 @@ inline void gcode_M109() {
     #endif
     
      // flush the serial buffer after heating to prevent lockup by m105
-     flush_and_request_resend();
+     SERIAL_FLUSH();
   }
 
 #endif // HAS_HEATED_BED
