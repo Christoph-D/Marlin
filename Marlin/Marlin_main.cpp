@@ -7418,7 +7418,6 @@ inline void gcode_M17() {
    */
   static void wait_for_filament_reload(const int8_t max_beep_count=0) {
     nozzle_timed_out = false;
-    nozzle_timed_out = false;
     #ifdef ANYCUBIC_TFT_MODEL
       AnycubicTFT.PausedByNozzleTimeout = false;
     #endif
@@ -15369,7 +15368,6 @@ void stop() {
   }
 }
 
-
 /**
  * Marlin entry-point: Set up before the program loop
  *  - Set up the kill pin, filament runout, power hold
@@ -15643,7 +15641,6 @@ void setup() {
     card.beginautostart();
   #endif
 }
-
 
 /**
  * The main Marlin program loop
